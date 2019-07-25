@@ -11,6 +11,7 @@ namespace MvcFormsVsModelBinding.Models
     /// </summary>
     public class ProTeam
     {
+        [Key]
         public string TeamId { get; set; }
 
         /// <summary>
