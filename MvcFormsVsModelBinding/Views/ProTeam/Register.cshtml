@@ -3,5 +3,41 @@
     ViewData["Title"] = "New Pro Team Registration";
 }
 
-<h1>Register</h1>
+<h1>Register Pro Team</h1>
 
+<!--
+    SID: Generated
+    NameOfTeam:
+    NameOfCoach:First/Last
+    CountryOfResidence
+    Sport
+    TeamFoundationDate
+-->
+<form method="post">
+    <label for="name-of-team">Name Of Your Team</label>
+    <input type="text" id="name-of-team" name="name-of-team" />
+    <span>*</span>
+    <br />
+
+    <label for="name-of-coach">Name Of Your Coach</label>
+    <input type="text" id="name-of-coach" name="name-of-coach" />
+    <span>*</span>
+    <br />
+
+    <label for="country">Your Team's Country</label>
+    <input type="text" id="country" name="country" />
+    <span>*</span>
+    <br />
+
+    <label for="sport">Your Team's Sport</label>
+    <input type="text" id="sport" name="sport" />
+    <span>*</span>
+    <br />
+
+    <label for="dof">When Your Team Was Created</label>
+    <input type="date" id="dof" name="dof" />
+    <span>*</span>
+    <br />
+
+    <input type="submit" value="Register" />
+</form>
