@@ -5,32 +5,39 @@
 
 <h1>RegisterMB</h1>
 
-<form method="post">
+@if (ViewData["Success"] != null)
+{
+    <h2>@ViewData["Success"]</h2>
+}
+else
+{
+    <form method="post">
 
-    <label asp-for="NameOfTeam"></label>
-    <input asp-for="NameOfTeam" />
-    <span asp-validation-for="NameOfTeam"></span>
-    <br />
+        <label asp-for="NameOfTeam"></label>
+        <input asp-for="NameOfTeam" />
+        <span asp-validation-for="NameOfTeam"></span>
+        <br />
 
-    <label asp-for="NameOfCoach"></label>
-    <input asp-for="NameOfCoach" />
-    <span asp-validation-for="NameOfCoach"></span>
-    <br />
+        <label asp-for="NameOfCoach"></label>
+        <input asp-for="NameOfCoach" />
+        <span asp-validation-for="NameOfCoach"></span>
+        <br />
 
-    <label asp-for="Country"></label>
-    <input asp-for="Country" />
-    <span asp-validation-for="Country"></span>
-    <br />
+        <label asp-for="Country"></label>
+        <input asp-for="Country" />
+        <span asp-validation-for="Country"></span>
+        <br />
 
-    <label asp-for="Sport"></label>
-    <input asp-for="Sport" />
-    <span asp-validation-for="Sport"></span>
-    <br />
+        <label asp-for="Sport"></label>
+        <input asp-for="Sport" />
+        <span asp-validation-for="Sport"></span>
+        <br />
 
-    <label asp-for="DateFounded"></label>
-    <input asp-for="DateFounded" />
-    <span asp-validation-for="DateFounded"></span>
-    <br />
+        <label asp-for="DateFounded"></label>
+        <input asp-for="DateFounded" />
+        <span asp-validation-for="DateFounded"></span>
+        <br />
 
-    <input type="submit" value="Register Model Binding Way" />
-</form>
+        <input type="submit" value="Register Model Binding Way" />
+    </form>
+}

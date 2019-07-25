@@ -53,7 +53,9 @@ namespace MvcFormsVsModelBinding.Controllers
             if (ModelState.IsValid)
             {
                 // Add to database
+                ProTeamDB.Register(p);
                 // Display success message
+                ViewData["Success"] = "Pro Team was successfully registered";
             }
 
             return View();
